@@ -36,7 +36,7 @@ set guioptions-=T			" remove toolbar
 set showmatch				" 設置匹配模式，顯示匹配的括号
 set whichwrap=b,s,<,>,[,]	" 光標從行首和行末时可以跳到另一行去
 set nobackup                " no auto backup
-"set foldmethod=indent       " 自動摺疊
+set foldmethod=syntax       " 自動摺疊
 
 " ctags & taglist setting
 set tags=PATH/tags
