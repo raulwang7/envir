@@ -37,6 +37,7 @@ set showmatch				" 設置匹配模式，顯示匹配的括号
 set whichwrap=b,s,<,>,[,]	" 光標從行首和行末时可以跳到另一行去
 set nobackup                " no auto backup
 set foldmethod=syntax       " 自動摺疊
+" set mouse=nv
 
 " ctags & taglist setting
 set tags=PATH/tags
@@ -48,14 +49,22 @@ let Tlist_Auto_Update=1
 "let Tlist_Use_SingleClick=1
 
 " map
-nnoremap <F3>  :NERDTreeToggle<CR>
+"nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F5>  :noh<CR>
-nnoremap <F12> :TlistToggle<CR>
-nnoremap <C-t> :tabnew<CR>
-nnoremap <S-e> :w<CR>:!python % <CR>
+"nnoremap <F12> :TlistToggle<CR>
+"nnoremap <C-t> :tabnew<CR>
+"nnoremap <S-e> :w<CR>:!python % <CR>
 "nnoremap <buffer> <S-e> :w<CR>:!python % <CR>
-nnoremap gf    :tabedit <cfile><CR>
+"nnoremap gf    :tabedit <cfile><CR>
 
+" Open and close all the three plugins on the same time
+nmap <C-F7> :TrinityToggleAll<CR>
+" Open and close the srcexpl.vim separately
+nmap <C-F9> :TrinityToggleSourceExplorer<CR>
+" Open and close the taglist.vim separately
+nmap <C-F10> :TrinityToggleTagList<CR>
+" Open and close the NERD_tree.vim separately
+nmap <C-F11> :TrinityToggleNERDTree<CR>
 " Remove tailing spaces
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 autocmd BufWritePre * :%s/\s\+$//e
