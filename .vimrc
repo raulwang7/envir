@@ -52,7 +52,7 @@ let Tlist_Auto_Update=1
 "nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F5>  :noh<CR>
 "nnoremap <F12> :TlistToggle<CR>
-"nnoremap <C-t> :tabnew<CR>
+nnoremap <C-t> :tabnew<CR>
 "nnoremap <S-e> :w<CR>:!python % <CR>
 "nnoremap <buffer> <S-e> :w<CR>:!python % <CR>
 "nnoremap gf    :tabedit <cfile><CR>
