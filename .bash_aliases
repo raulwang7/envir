@@ -115,7 +115,7 @@ __svn_stat ()
 
 __git_branch()
 {
-	git branch 2>/dev/null | awk '/*/ {print $2;}'
+	git branch 2>/dev/null | awk '/\*/ {print $2;}'
 }
 
 __git_clean ()
